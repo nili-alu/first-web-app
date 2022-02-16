@@ -1,7 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'pppins', sans-serif;
+
+
+}
+
 body{
-    background-color: rgb(18, 18, 19);
-    align-items: center;
-    height: 100%;
+    background-color: rgb(180, 185, 204);
+    background-position: center;
+    background-size: cover;
+}
+ul {
+    display: inline-flex ;
+    display: flex;
+    justify-content: flex-end;
+      
+}
+ul li {
+    padding: 1.5rem;
+    list-style: none;
+    
+}
+ul li #name {
+    justify-content: flex-start;
+}
+.bio {
+    
+    display: flex;
+    flex-direction: row;
+    color: rgb(22, 22, 24);
+   
+
+}
+.color-overlay{
+    background-image: url(../src/image/background.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+}
+
+.Institution {
+    padding-top: 130px;
+    color: aliceblue;
+    position:relative;
+    -webkit-text-stroke: 0.1vw rgb(187, 223, 215);
+    text-transform:uppercase;
+}
+.Institution ::before {
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   color: aqua;
+   -webkit-text-stroke: 0vw rgb(180, 115, 115);
+   border-right: 2px solid #31ee8f;
+   overflow: hidden;
+   animation: animate 6% linear infinite;
+}
+@keyframes animate
+ {
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%, 90%
+    {
+        width: 100%;
+
+    }
+}
+
+#image {
+    width: 16%;
+    height: 200px;
+    padding-left: 10px;
+    border-radius: 50%;
+   
+}
+.data{
+    width: 30%;
+    position: relative;
+    left: 5rem;
+}
+
+.Institution{
+    padding-left: 500px;
+    margin: 10px;
+}
+.container{
+    border:thin solid rgb(175, 140, 45);
+    padding-left:100px;
+}
+#title{
+    padding-left: 200px;
+    padding-bottom: 20px;
+}
+
+.services{
+    display: flex;
+   flex-direction: row;
+   padding-left: 10px;
+
+}
+.card{
+    padding-inline-end: 10px;
+    flex-direction: row;
+}
+.card >img{
+    width: 90%;
+}
+.hobbies_container{
+    padding-bottom: 20px;
+}
+/* .hobbies_container >h3 {
+   
+    padding-bottom: 10px;
+   /* justify-content: center;
+   align-items: center; */
+   /* padding-right: 300px; */
+
+
+.hobbies{
+    display:flex;
+    flex-direction: row;
+}
+.card-hobbies >img{
+    width: 30vw;
+    margin-left: 10px;
+    height: 30vh;
+    margin-right: 5px;
+}
+.footer{
+    background-color: dimgray;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 300px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    
+  
+
+}
+.footer >form{
     width: 50%;
-    color: bisque;
+    padding-left: 50px;
+}
+.infos{
+    display:flex;
+    flex-direction: column;
+}
+.icon{
+    padding-top: 100px;
 }
